@@ -36,7 +36,7 @@ module.exports = {
 
         embeds = new Discord.MessageEmbed()
         .setTitle('All the available commands(This command is only in english)')
-        .addField('Prefix : ', `\`${prefix}\`\n**Link**\n[\`Support server\`](https://discord.gg/cx9GcfxSQ6) | [\`Invite link\`](https://discord.com/oauth2/authorize?client_id=869537614796034128&scope=bot&permissions=8589934583) | [\`Patreon\`](https://www.patreon.com/kajirama)`)
+        .addField('Powered by [Akimi](https://top.gg/bot/869537614796034128)\nPrefix : ', `\`${prefix}\`\n**Link**\n[\`Support server\`](https://discord.gg/cx9GcfxSQ6) | [\`Invite link\`](https://discord.com/oauth2/authorize?client_id=869537614796034128&scope=bot&permissions=8589934583) | [\`Patreon\`](https://www.patreon.com/kajirama)`)
         .setDescription(`List of available commands : 
 
         ⛔ \`Moderation commands\`
@@ -74,7 +74,7 @@ module.exports = {
         .addField("**commands:**", 
         `\`${prefix}announce\` - Create a custom announce\n\`${prefix}ban\` - Ban a user\n\`${prefix}captcha\` - On/off captcha system\n\`${prefix}clear\` - Clear an amount of messages\n\`${prefix}kick\` - Kick a user\n\`${prefix}lock\` - Lock a channel\n\`${prefix}removerole\` - Remove a role from a user\n\`${prefix}resetnick\` - Reset the nickname of a user\n\`${prefix}set-language\` - Set the language of the bot\n\`${prefix}setnick\` - Set a nickname to a user\n\`${prefix}slowmode\` - Set the slowmode in a channel\n\`${prefix}tempmute\` - Tempmute a user\n\`${prefix}unban\` - Unban a user\n\`${prefix}unlock\`- Unlock a channel\n\`${prefix}unmute\` - Unmute a user\n\`${prefix}voicekick\` - Kick a user from a voice channel`)
         .setColor("#BE1931")
-        .setFooter('1/10')
+        .setFooter('1/10 P. By Akimi')
         .setThumbnail(`${avatar}`)
         embed3 = new Discord.MessageEmbed()
         .setTitle(`Fun Commands 🌺`)
@@ -82,7 +82,7 @@ module.exports = {
         .addField("commands:", 
         `\`${prefix}8ball\` - Ask a question to the 8ball\n\`${prefix}achievement\` - Create a custom Minecraft achievement\n\`${prefix}phcomment\` - Send a random ph comment\n\`${prefix}advice\` - Send an advice\n\`${prefix}ascii\` - Convert a text to ascii\n\`${prefix}c\` - Chat with the bot\n\`${prefix}fact\` - Send a fact\n\`${prefix}hack\` - Hack a user\n\`${prefix}howgay\` - Show how much is gay a user\n\`${prefix}joke\` - Send a joke\n\`${prefix}meme\` - Send a meme\n\`${prefix}reverse\` - Reverse a text\n\`${prefix}roast\` - Roast a user\n\`${prefix}say\` - Makes the bot say somethings\n\`${prefix}ship\` - Find out who your soul mate is\n\`${prefix}tts\` - Convert a text to speech\n\`${prefix}chatbot\` - Create a channel called 'chatbot' to use this function\n\`${prefix}creatememe\` - Create a meme with custom text\n\`${prefix}sussy\` - Send a user's avatar with among us feet(that's cringe)\n\`${prefix}bigtext\` - Convert a text to big blue text\n\`${prefix}blackout\` - Set a spoiler between each letter\n\`${prefix}mock\` - Mock a text\n\`${prefix}clyde\` - Send a custom message from clyde bot\n\`${prefix}reasontolive\` - This sends in your dm the reasons why you have to live and why your life is precious!(Is a very long message!)`)
         .setColor("#ccffff")
-        .setFooter('3/10')
+        .setFooter('3/10 P. By Akimi')
         .setThumbnail(`${avatar}`)
         embed4 = new Discord.MessageEmbed()
         .setTitle(`Game Commands 🎮`)
@@ -90,14 +90,14 @@ module.exports = {
         .addField("commands:", 
         `\`${prefix}coinflip\` - Flip a coin\n\`${prefix}hangman\` - Hangman game\n\`${prefix}snake\` - The classic snake game\n\`${prefix}ftype\` - Server Fast type game\n\`${prefix}tftype\` - Train yourself for fast type games\n\`${prefix}trivia\` - Random question\n\`${prefix}akinator\` - Akinator game\n\`${prefix}tictactoe\` - TicTacToe game\n\`${prefix}calculator\` - Button calculator\n\`${prefix}rps\` - Play rock, paper, scissors with a user\n\`${prefix}brps\` - Play rock, paper, scissors with the bot\n\`${prefix}cn4\` - Connect four game\n\`${prefix}gnumber\` - Guess the number game\n\`${prefix}horserace\` - Bet in the horse race game`)
         .setColor("#ccccff")
-        .setFooter('4/10').setThumbnail(`${avatar}`)
+        .setFooter('4/10 P. By Akimi').setThumbnail(`${avatar}`)
         embed5 = new Discord.MessageEmbed()
         .setTitle(`Music Commands 🎵`)
         .setDescription('Here area all the Available commands')
         .addField("commands:", 
         `\`${prefix}play\` - Play a song\n\`${prefix}leave\` - Leave the channel & clear the queue\n\`${prefix}lyrics\` - Search a lyrics of specific song\n\`${prefix}queue\` - Show the song queue\n\`${prefix}loop\` -On/off loop\n\`${prefix}nowplaying\` - Show the song is now playing\n\`${prefix}shuffle\` - Shuffle the songs queue\n\`${prefix}volume\` - Set the volume\n\`${prefix}skip\` - Skip to another song\n\`${prefix}skipto\` - Skip to a song in the queue\n\`${prefix}drop\` - Remove a song in the queue`)
         .setColor("#ff99cc")
-        .setFooter('5/10')
+        .setFooter('5/10 P. By Akimi')
         .setThumbnail(`${avatar}`)
 
         embed6 = new Discord.MessageEmbed()
@@ -121,7 +121,7 @@ module.exports = {
         \`${prefix}slots\` - Bet at the slots
         `)
         .setColor("#E1C586")
-        .setFooter('6/10').setThumbnail(`${avatar}`)
+        .setFooter('6/10 P. By Akimi').setThumbnail(`${avatar}`)
 
         embed7 = new Discord.MessageEmbed()
         .setTitle(`NSFW Commands🔞`)
@@ -162,7 +162,7 @@ module.exports = {
         \`${prefix}kemonomimi\` - Send kemonomimi images
         `)
         .setColor("#990000")
-        .setFooter('7/10').setThumbnail(`${avatar}`)
+        .setFooter('7/10 P. By Akimi').setThumbnail(`${avatar}`)
 
 embed8 = new Discord.MessageEmbed()
         .setTitle(`Info & Utility🍥`)
@@ -199,7 +199,7 @@ embed8 = new Discord.MessageEmbed()
         \`${prefix}patreon\` - Send the link of the official patreon
         `)
         .setColor("#990000")
-        .setFooter('8/10').setThumbnail(`${avatar}`)
+        .setFooter('8/10 P. By Akimi').setThumbnail(`${avatar}`)
 
         embed9 = new Discord.MessageEmbed()
         .setTitle(`Image Commands🖼`)
@@ -219,7 +219,7 @@ embed8 = new Discord.MessageEmbed()
         \`${prefix}changemymind\` - Send a custom change my mind meme
         \`${prefix}gay\` - Color gay aa user profile pictures
         \`${prefix}jail\` - Jail a user pfp    
-        `)
+        `)         //invisible character on discord desktop.  
         .addField(`᲼᲼`, `
         \`${prefix}meeting\` - Custom text among us meeting
         \`${prefix}rip\` - Send a tombstone with user profile pictures
@@ -236,7 +236,7 @@ embed8 = new Discord.MessageEmbed()
         \`${prefix}waifu\` - Find your waifu!
         `)
         .setColor("#669999")
-        .setFooter('9/10').setThumbnail(`${avatar}`)
+        .setFooter('9/10 P. By Akimi').setThumbnail(`${avatar}`)
 
 
 				embed10 = new Discord.MessageEmbed()
@@ -248,7 +248,7 @@ embed8 = new Discord.MessageEmbed()
         \`${prefix}info-backup\` - Shows info of a backup
         `)
         .setColor("#990000")
-        .setFooter('10/10').setThumbnail(`${avatar}`)
+        .setFooter('10/10 P. By Akimi').setThumbnail(`${avatar}`)
 
 
         pages = [embed1, embed2, embed3, embed4, embed5, embed6, embed7, embed8, embed9, embed10]
@@ -332,39 +332,7 @@ let row3 = new MessageActionRow()
           });
 
 
-client.on('clickMenu', async (menu) => {
-  menu.reply.defer();
-  if (menu.values[0] === 'Option 1') {
-    msg.edit({embed : {
-      description : `[Click here for join in the support server!](https://discord.gg/DxkGqNvu) `
-    }})
-  }
-});
 
-
-client.on('clickMenu', async (menu) => {
-  menu.reply.defer();
-  if (menu.values[0] === 'Option 4') {
-    
-    message.delete()
-  }
-});
-
-client.on('clickMenu', async (menu) => {
-  menu.reply.defer();
-  if (menu.values[0] === 'Option 2') {
-    msg.edit({embed : {
-      description : `[Click here for invite me!](https://discord.com/oauth2/authorize?client_id=851025450537058326&scope=bot&permissions=5905317110) `
-    }})
-  }
-});
-
-client.on('clickMenu', async (menu) => {
-  menu.reply.defer();
-  if (menu.values[0] === 'Option 3') {
-    msg.edit(embeds)
-  }
-});
 
 
 
