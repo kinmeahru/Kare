@@ -1,6 +1,6 @@
  {
 	 
-  "TOKEN": "your_bot_token" //Your bot token
+  "TOKEN": "your_bot_token" /*Your bot token*/
   "default_prefix": "", //Your bot prefix
   "owners": "owner_id", //You user id
   "main_color" : "#dc5586",//The main embeds color
