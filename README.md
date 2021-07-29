@@ -21,6 +21,7 @@ I will **NOT** give Support if the BOT does not work for you!
 
 #### **NOTE:**
 
+*Do not look the files or folders name them are CASUALLY changed.*
 *If you are having errors/problems with starting delete the package.json file and do, before you install the packages `npm init`*
 
 
@@ -31,5 +32,5 @@ You can always Support me by inviting one of my **own Discord Bots**
 
 
 
-This repository only exists, because of these DISCORD BOTS, so make sure to invite it, so that i can keep this Repo up to date ;)
+
 
