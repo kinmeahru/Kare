@@ -26,7 +26,9 @@ module.exports = {
             .addField(`				**❯ Guild Count:**`, `\`\`\`${client.guilds.cache.size} guilds\`\`\``, true)
             .addField(`				**❯ User Count:**`, `\`\`\`${client.users.cache.size} users\`\`\``, true)
             .addField(`				**❯ Commands:**`, `\`\`\`${client.commands.size} cmds\`\`\``,true)
-            .addField(`       **❯ Developers:**`, `\`\`\`</Kajirama>#0117\n</Amen>#9898\`\`\``)
+            .addField(`       **❯ Developers:**`, `\`\`\`Kayeda#9473\n</Amen>#9898\`\`\`
+            P. By Akimi
+            `)
             .setTimestamp()
         );
     }
