@@ -1,0 +1,33 @@
+ {
+
+  "default_prefix": "$",
+  "owners": "314755997891559435",
+  "main_color" : "#dc5586",
+  "error_color" : "#F04947",
+  "success_color" : "#dc5586",
+  "warning_color" : "#F9C541",
+  "music_color" : "#5DADEC",
+  "warning" : "<:warning:862627048123269120> ",
+  "success" : "<:Success:869580276102234133> ",
+	"volumee" : "<:icons8volumebasso64:862767260316729364>",
+	"diskspin" : "<a:diskspin:862684926431199312> ",
+  "error" : "<:Error:869557307506323496> ",
+  "butterfly" : "<a:SH_butterflylightpurple:865598138814431253>",
+  "staff" : "<:DiscordStaff:869576643423916092>",
+  "buff" : "<:buffCord:865599377933205504>",
+  "boost" : "<:buffCord:869577341104431186>",
+   "nitros" : "<:EarlySupporter:869576831983030302>",
+   "cursor": "<a:cursor:865601830830473256>",
+   "vsc" : "<:vsc:865602018524266515>",
+   "devb" : "<:developer_badge2:865602455977852981>",
+   "ytlogo" : "<:gc_youtube:868508602904743956>",
+"QUEUE_LIMIT": 20, 
+  "COLOR": "#F6EFFF",
+  "music" : "🎶 ",
+
+    "colors": {
+    "yes" : "#dc5586",
+    "no"  : "#F04947"
+  }
+
+}
