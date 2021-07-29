@@ -15,7 +15,7 @@ superagent.get('https://nekos.life/api/v2/img/goose')
   .setTitle("Goose")
   .setImage(response.body.url)
   .setColor(`#000000`)
-  .setFooter(`._.`)
+  .setFooter(`._. | P. By Akimi`)
   .setURL(response.body.url);
 message.channel.send(lewdembed);
 })
