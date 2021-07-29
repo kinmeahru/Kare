@@ -1,7 +1,7 @@
  {
-
-  "default_prefix": "$",
-  "owners": "314755997891559435",
+  "TOKEN": "your_bot_token"
+  "default_prefix": "",
+  "owners": "owner_id",
   "main_color" : "#dc5586",
   "error_color" : "#F04947",
   "success_color" : "#dc5586",
