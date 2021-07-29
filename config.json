@@ -1,14 +1,16 @@
  {
-  "TOKEN": "your_bot_token"
-  "default_prefix": "",
-  "owners": "owner_id",
-  "main_color" : "#dc5586",
-  "error_color" : "#F04947",
+	 
+  "TOKEN": "your_bot_token" //Your bot token
+  "default_prefix": "", //Your bot prefix
+  "owners": "owner_id", //You user id
+  "main_color" : "#dc5586",//The main embeds color
+  "error_color" : "#F04947",//The embed error color
   "success_color" : "#dc5586",
   "warning_color" : "#F9C541",
   "music_color" : "#5DADEC",
   "warning" : "<:warning:862627048123269120> ",
   "success" : "<:Success:869580276102234133> ",
+	 //EMOJIS
 	"volumee" : "<:icons8volumebasso64:862767260316729364>",
 	"diskspin" : "<a:diskspin:862684926431199312> ",
   "error" : "<:Error:869557307506323496> ",
@@ -21,9 +23,7 @@
    "vsc" : "<:vsc:865602018524266515>",
    "devb" : "<:developer_badge2:865602455977852981>",
    "ytlogo" : "<:gc_youtube:868508602904743956>",
-"QUEUE_LIMIT": 20, 
-  "COLOR": "#F6EFFF",
-  "music" : "🎶 ",
+	 
 
     "colors": {
     "yes" : "#dc5586",
