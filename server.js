@@ -1,10 +1,10 @@
- const {default_prefix} = require("./config.json")
+ const {default_prefix, TOKEN } = require("./config.json")
  const DisTube = require("distube")
  const { MessageEmbed } = require("discord.js");
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://user:yuukiisthebest@yuuki.tnasg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect('mongo_url', {
     useUnifiedTopology : true,
     useNewUrlParser: true,
 }).then(console.log('connected to mongo db!'))
@@ -35,9 +35,7 @@ const client = new Discord.Client({
     client.setMaxListeners(200);
 
 const yts = require('yt-search')
- global.PBapi = require('prime-bots.js');
- global.PrimeBot = new PBapi('APIToken.ep5xfpsekt.2g5dcszemw6', client);
-global.Minesweeper = require('discord.js-minesweeper');
+ 
 client.queue = new Map();
 client.vote = new Map();
 const { ready } = require("./handlers/ready.js")
@@ -98,7 +96,7 @@ return message.channel.send(`**:x: Please dont mention anyone**`);
  }
   message.channel.startTyping();
 if (!message.content) return message.channel.send("Please say something.");
-fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(message.content)}&botname=${client.user.username}&ownername=kajirama`)
+fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(message.content)}&botname=${client.user.username}&ownername=kayeda`)
     .then(res => res.json())
     .then(data => {
         message.channel.send(`> ${message.content} \n <@${message.author.id}> ${data.message}`);
@@ -106,58 +104,12 @@ fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(me
       message.channel.stopTyping();
 }
 });
-
-client.on("message", async message => {
-if (message.channel.name == "├⁉chatbot") {
-if (message.author.bot) return;
-message.content = message.content.replace(/@(everyone)/gi, "everyone").replace(/@(here)/gi, "here");
-if (message.content.includes(`@`)) {
-return message.channel.send(`**:x: Please dont mention anyone**`);
- }
-  message.channel.startTyping();
-if (!message.content) return message.channel.send("Please say something.");
-fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(message.content)}&botname=${client.user.username}&ownername=kajirama`)
-    .then(res => res.json())
-    .then(data => {
-        message.channel.send(`> ${message.content} \n <@${message.author.id}> ${data.message}`);
-    });
-      message.channel.stopTyping();
-}
-});
-
-
-
-
-
-
-const { GiveawaysManager } = require("discord-giveaways");
-
-const manager = new GiveawaysManager(client, {
-    storage: "./handlers/giveaways.json",
-    updateCountdownEvery: 10000,
-    default: {
-        botsCanWin: false,
-        exemptPermissions: [ "MANAGE_MESSAGES", "ADMINISTRATOR" ],
-        embedColor: "#FF0000",
-        reaction: "🎉"
-    }
-});
-
-client.giveawaysManager = manager;
-
-client.on("message", async message => {
-if(!message.guild) return;
-  let prefix = default_prefix
-  
-  if(!message.content.startsWith(prefix)) return;
- 
-})
 
 
 
 client.on("ready", () => {
     client.user.setStatus("online");
-    console.log("BOT ONLINE")
+    console.log("online")
 
        
 });
@@ -198,9 +150,7 @@ new Player(client, {
     quality: 'high',
 });
 const fs = require('fs')
-const Levels = require("discord-xp");
 
-Levels.setURL("mongodb+srv://user:yuukiisthebest@yuuki.tnasg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
 
  client.on('guildCreate', guild =>{
 
@@ -377,45 +327,13 @@ client.on('guildMemberAdd', async (member) => {
 
 
 
- 
 
-
-client.on("message", async message => {
-    if(message.author.bot || message.channel.type === "dm") return;
-
-    const messageArray = message.content.split(' ');
-	const cmd = messageArray[0];
-	const args = messageArray.slice(1);
-
-    if (cmd === default_prefix + 'poll'){
-        let pollChannel = message.mentions.channels.first();
-        let pollDescription = args.slice(1).join(' ');
-        if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send({embed : {
-    description : `You don't have permission to use this command!`,
-    color : `RED`  
-  }})
-     if(!pollChannel) return message.reply({embed : {
-    description : `Please mention a channel first!`,
-    color : `RED`  
-  }});
-        let embedPoll = new Discord.MessageEmbed()
-        .setTitle('🚨Poll!')
-        .setDescription(pollDescription)
-        .setColor('RANDOM')
-        let msgEmbed = await pollChannel.send(embedPoll);
-        await msgEmbed.react('1️⃣')
-        await msgEmbed.react('2️⃣')
-        
-   
-    }
-
-})
 
   
 const { Snake }  = require("weky")
 client.on('message', async (message) => {
     if (message.author.bot) return;
-    if (message.content.startsWith(default_prefix + "snake" || "snek")) {
+    if (message.content.startsWith(default_prefix + "snake")) {
 
 const game = new Snake({
             message: message,
@@ -455,193 +373,10 @@ client.on('message', async (message) => {
 
 
 
-PrimeBot.on('vote', (vote) => {
-
-    const channelId = '869681251597033493'; 
-
-    const channel = client.channels.cache.get(channelId); 
-    
-    if(!channel) return;  
-    const embed = new discord.MessageEmbed()
-        .setTitle('Someone voted me!')
-        .setDescription(`${vote.id} Mi ha votato su prime bots!`)
-        .setTimestamp()
-        .setColor('RANDOM')
-    channel.send(embed);
-});
-
-
-
-client.on('guildMemberAdd', (member) => {
-
-
-    const welc = new Discord.MessageEmbed()
-    .setTitle(`NEW ENTRY`)
-    .setDescription(`${member} Welcome to **Akimi palace**!
-    Please read the <#869601664846422126> And Check the <#869606693808533585>`)
-    .setColor('RANDOM')
-    .setImage(member.user.displayAvatarURL())
-    client.channels.cache.get("869598134815297547").send(welc)
-
-})
-
-
-client.on('guildMemberRemove', (member) => {
-
-
-    const welc = new Discord.MessageEmbed()
-    .setTitle(`LEAVED`)
-    .setDescription(`${member} leaved the server!`)
-    .setColor('RED')
-    .setImage(member.user.displayAvatarURL())
-    client.channels.cache.get("869598134815297547").send(welc)
-
-})
-
-
-
-/*client.on('message', message => {
-  
-    if(message.content === '-roles') { 
-         if(message.author.id !== '314755997891559435') return;
-        let embruoli = new Discord.MessageEmbed()
-          .setTitle('Choose your roles')
-          .setDescription('**Click on the reactions to add theme to your roles!**\n\n**GENDER:**\n🔵 Male\n🔴 Female\n⚪ Else\n\n**HOBBY:**\n🕹 Gamer\n💻 Developer\n👩🏻‍🎨 Artist\n📎 Other')
-          .setColor('8a8aff')
-
-
-
-          message.channel.send(`@everyone`, embruoli)
-          .then(msg => {
-              msg.react("🔵")
-              msg.react("🔴")
-              msg.react("⚪")
-              msg.react("🕹")
-              msg.react("💻")
-              msg.react("👩🏻‍🎨")
-              msg.react("📎")
-          })
-    }
-}) */
-
-client.on("messageReactionAdd", async function (messageReaction, user) {
-if(user.bot) return;
-
-if(messageReaction.partial) await messageReaction.message.fetch();
-
-
-if(messageReaction.message.id == '869694227485978704') {
-    if(messageReaction._emoji.name == '🔵') {
-        var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-        utente.roles.add("869611199938052156")
-    }
-
-    if(messageReaction._emoji.name == '🔴') {
-        var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-        utente.roles.add("869614150853201992")
-    }
-    if(messageReaction._emoji.name == '⚪') {
-        var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-        utente.roles.add("869633025871323196")
-    }
-
-    if(messageReaction._emoji.name == '🕹') {
-        var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-        utente.roles.add("869633789196926986")
-    }
-    if(messageReaction._emoji.name == '💻') {
-        var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-        utente.roles.add("869633785124245535")
-    }
-    if(messageReaction._emoji.name == '📎') {
-        var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-        utente.roles.add("869633961075294258")
-    }
-    if(messageReaction._emoji.name == '👩🏻‍🎨') {
-        var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-        utente.roles.add("869635715267428362")
-    }
- 
-    
-}
-})
-
-client.on("messageReactionRemove", async function (messageReaction, user) {
-    if(user.bot) return;
-    
-    if(messageReaction.partial) await messageReaction.message.fetch();
-    
-    
-    if(messageReaction.message.id == '869694227485978704') {
-        if(messageReaction._emoji.name == '🔵') {
-            var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-            utente.roles.remove("869611199938052156")
-        }
-    
-        if(messageReaction._emoji.name == '🔴') {
-            var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-            utente.roles.remove("869614150853201992")
-        }
-        if(messageReaction._emoji.name == '⚪') {
-            var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-            utente.roles.remove("869633025871323196")
-        }
-    
-        if(messageReaction._emoji.name == '🕹') {
-            var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-            utente.roles.remove("869633789196926986")
-        }
-        if(messageReaction._emoji.name == '💻') {
-            var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-            utente.roles.remove("869633785124245535")
-        }
-        if(messageReaction._emoji.name == '📎') {
-            var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-            utente.roles.remove("869633961075294258")
-        }
-        if(messageReaction._emoji.name == '👩🏻‍🎨') {
-            var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-            utente.roles.remove("869635715267428362")
-        }
-    }
-    })
 
 
 
 
 
 
-
-/*client.on('message', message => {
-  
-    if(message.content === 'verification') { 
-         if(message.author.id !== '314755997891559435') return;
-        let vemb = new Discord.MessageEmbed()
-          .setTitle('Verification')
-          .setDescription('Click on reaction for complete the verification and continue to navigate in the server')
-          .setColor('BLUE')
-
-
-
-          message.channel.send(`@everyone`, vemb).then(msg => {
-              msg.react("🟢")
-          })
-    }
-})*/
-
-client.on("messageReactionAdd", async function (messageReaction, user) {
-    if(user.bot) return;
-    
-    if(messageReaction.partial) await messageReaction.message.fetch();
-    
-    
-    if(messageReaction.message.id == '869694659969024050') {
-        if(messageReaction._emoji.name == '🟢') {
-            var utente = messageReaction.message.guild.members.cache.find(x => x.id == user.id)
-            utente.roles.add("869612285985980436")
-        }
-    }
-    })
-
-
-client.login('ODY5NTM3NjE0Nzk2MDM0MTI4.YP_qAg.Is-WUtLB0hWs70euLwm1ak_I4R0')
+client.login(TOKEN)
