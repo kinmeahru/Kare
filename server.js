@@ -12,10 +12,9 @@ mongoose.connect('mongo_url', {
 
 
 
-const { addexp } = require("./handlers/xp.js")
+
 const SnakeGame = require('snakecord');
 const Discord = require('discord.js');
-require('@weky/inlinereply');
 const { config } = require("dotenv");
 const fetch = require("node-fetch");
 const db =require("quick.db");
@@ -25,7 +24,6 @@ const canva = new CanvasSenpai();
 const { emotes , emoji} =require("./config.json")
 const discord = require("discord.js");
 const disbut = require('discord-buttons');
-const { QuickClick } = require('weky');
 
 const client = new Discord.Client({
     shards: "auto",
@@ -160,7 +158,7 @@ const fs = require('fs')
     
     if(!channel) return;  
     const embed = new discord.MessageEmbed()
-        .setTitle('I Joined A Server!:D')
+        .setTitle('I Joined A Server! :D')
         .setDescription(`**Server Name:** ${guild.name} (${guild.id})\n**Members:** ${guild.memberCount}`)
         .setTimestamp()
         .setColor('RANDOM')
