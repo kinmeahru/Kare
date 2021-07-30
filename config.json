@@ -8,9 +8,10 @@
   "success_color" : "#dc5586",
   "warning_color" : "#F9C541",
   "music_color" : "#5DADEC",
+//EMOJIS	 
   "warning" : "<:warning:862627048123269120> ",
   "success" : "<:Success:869580276102234133> ",
-	 //EMOJIS
+	 
 	"volumee" : "<:icons8volumebasso64:862767260316729364>",
 	"diskspin" : "<a:diskspin:862684926431199312> ",
   "error" : "<:Error:869557307506323496> ",
