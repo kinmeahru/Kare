@@ -11,7 +11,7 @@ category: ['📰info'],
 */
 
 run: async(client, message, args) => {
-const owner = client.users.cache.get('719646216056733767');
+const owner = client.users.cache.get('your user id');
 
 const query = args.join(" ");
 if(!query) return message.reply('Please Provide Something To Report');
