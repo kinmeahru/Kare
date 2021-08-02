@@ -25,7 +25,7 @@ I will **NOT** give Support if the BOT does not work for you!
 
 *If you are having errors/problems with starting delete the package.json file and do, before you install the packages `npm init`*
 
-*The audit logger is the* "Milrato bot logger" *of* [Tomato6966](https://github.com/Tomato6966) *all logger credits go to him.*
+*The audit logger is the* "Milrato bot" *logger of* [Tomato6966](https://github.com/Tomato6966) *All logger credits go to him.*
 
 
 # SUPPORT ME
