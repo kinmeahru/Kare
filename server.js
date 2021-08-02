@@ -12,7 +12,7 @@ mongoose.connect('mongo_url', {
 
 
 
-
+const colors = require("colors")
 const SnakeGame = require('snakecord');
 const Discord = require('discord.js');
 const { config } = require("dotenv");
@@ -373,8 +373,8 @@ client.on('message', async (message) => {
 
 
 
-
-
+//logger
+require("./logger")(client);
 
 
 //bot login
