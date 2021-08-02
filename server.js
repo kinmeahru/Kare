@@ -76,9 +76,9 @@ client.on("message", async message => {
   if (command) command.run(client, message, args);
 
 
-  return addexp(message)
+  
 });
-
+//This commands handler sucks.
 
 
 
@@ -123,7 +123,7 @@ if(!message.guild) return;
 
 
 
-
+//Status
 client.on("ready", () => {
     client.user.setActivity(default_prefix + `help`, { 
       type: "STREAMING",
@@ -131,6 +131,7 @@ client.on("ready", () => {
       
       });
 });
+//Old music player
 const { Player } = require("discord-music-player");
 
 const player = new Player(client, {
@@ -149,10 +150,10 @@ new Player(client, {
 });
 const fs = require('fs')
 
-
+//If the bot join in a guild
  client.on('guildCreate', guild =>{
 
-    const channelId = '869681251597033493'; 
+    const channelId = 'channel_id'; 
 
     const channel = client.channels.cache.get(channelId); 
     
@@ -166,9 +167,9 @@ const fs = require('fs')
     channel.send(embed);
 });
 
-
+//If the bot left a guild
 client.on('guildDelete', guild =>{
-    const channelId = '869681251597033493';
+    const channelId = 'channel_id';
     const channel = client.channels.cache.get(channelId); 
     
     if(!channel) return;  
@@ -192,7 +193,7 @@ client.on('guildDelete', guild =>{
         repliedUser: true
     }
   
-
+//Discord together activity
 const { DiscordTogether } = require('discord-together');
 
 client.discordTogether = new DiscordTogether(client);
@@ -269,7 +270,7 @@ client.on('message', async message => {
     };
 });
 
-
+//captcha
 
 client.on('guildMemberAdd', async (member) => {
     if(db.has(`captcha-${member.guild.id}`)=== false) return;
@@ -326,7 +327,7 @@ client.on('guildMemberAdd', async (member) => {
 
 
 
-
+//snake
   
 const { Snake }  = require("weky")
 client.on('message', async (message) => {
@@ -358,6 +359,7 @@ const game = new Snake({
 
 })
 
+//button calculator
 client.on('message', async (message) => {
     if (message.author.bot) return;
     if (message.content.startsWith(default_prefix + "calculator")) {
@@ -375,6 +377,6 @@ client.on('message', async (message) => {
 
 
 
-
+//bot login
 
 client.login(TOKEN)
