@@ -28,7 +28,13 @@
 
     "colors": {
     "yes" : "#dc5586",
-    "no"  : "#F04947"
+    "no"  : "#F04947",
   }
+
+ "loggerChannelID": "your logs channel id",
+   "webhook": {
+      "id": "weebhook_id",
+      "token": "webhook_token"
+   }
 
 }
