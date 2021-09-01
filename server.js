@@ -1,5 +1,5 @@
  const {default_prefix, TOKEN, mongo_url } = require("./config.json")
- const DisTube = require("distube")
+
  const { MessageEmbed } = require("discord.js");
 
 const mongoose = require('mongoose');
@@ -9,11 +9,7 @@ mongoose.connect('mongo_url', {
     useNewUrlParser: true,
 }).then(console.log('connected to mongo db!'))
 
-
-
-
 const colors = require("colors")
-const SnakeGame = require('snakecord');
 const Discord = require('discord.js');
 const { config } = require("dotenv");
 const fetch = require("node-fetch");
@@ -84,7 +80,7 @@ client.on("message", async message => {
 
 
 
-
+//AI chatbot
 client.on("message", async message => {
 if (message.channel.name == "chatbot") {
 if (message.author.bot) return;
@@ -104,13 +100,6 @@ fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(me
 });
 
 
-
-client.on("ready", () => {
-    client.user.setStatus("online");
-    console.log("online")
-
-       
-});
 client.on("message", async message => {
 if(!message.guild) return;
   let prefix = default_prefix
@@ -153,7 +142,7 @@ const fs = require('fs')
 //If the bot join in a guild
  client.on('guildCreate', guild =>{
 
-    const channelId = 'channel_id'; 
+    const channelId = 'your channel_id'; 
 
     const channel = client.channels.cache.get(channelId); 
     
@@ -169,7 +158,7 @@ const fs = require('fs')
 
 //If the bot left a guild
 client.on('guildDelete', guild =>{
-    const channelId = 'channel_id';
+    const channelId = ' your channel_id';
     const channel = client.channels.cache.get(channelId); 
     
     if(!channel) return;  
@@ -183,16 +172,6 @@ client.on('guildDelete', guild =>{
 });
 
 
-
-
-
-
-
-    allowedMentions: {
-      
-        repliedUser: true
-    }
-  
 //Discord together activity
 const { DiscordTogether } = require('discord-together');
 
