@@ -373,8 +373,6 @@ client.on('message', async (message) => {
 
 
 
-//logger
-require("./logger")(client);
 
 
 //bot login
