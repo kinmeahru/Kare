@@ -13,7 +13,7 @@ The bot is for discord.js v12.5.3! And bot version is older than now.
 
  **2.** Download this repo and unzip it    |    or git clone it
 
- **3.** Install all of the packages with **`npm install`** 
+ **3.** Install all of the packages with **`npm install`** (For discord.js v12 `npm install discord.js@12.5.3`)
 
  **4** Fill in the parameters, RIGHT in `config.json`! **YOU HAVE TO INCLUDE ALL THE THINGS**
 
