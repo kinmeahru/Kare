@@ -32,7 +32,8 @@ I will **NOT** give Support if the BOT does not work for you!
 
 You can always Support me by inviting one of my **own Discord Bots** 
 
-Or donate on ko-fi
+Or donating on ko-fi
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E861C4W)
 
 
