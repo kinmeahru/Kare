@@ -2,7 +2,7 @@
 
 **This Discord Bot Repository of the Bot [Akimi](https://discord.com/oauth2/authorize?client_id=869537614796034128&scope=bot&permissions=8589934583) if you want to support me, then please [invite](https://discord.com/oauth2/authorize?client_id=869537614796034128&scope=bot&permissions=8589934583) him!**
 
-I will give Support if the BOT does not work for you!
+The bot is for discord.js v12.5.3! And bot version is older than now.
 
 ## [**DISCORD SUPPORT SERVER INVITE**](https://discord.gg/cx9GcfxSQ6)
 ## Installation | How to use the Bot
