@@ -23,7 +23,7 @@ The bot is for discord.js v12.5.3! And bot version is older than now.
 
 *If you are having errors/problems with starting delete the package.json file and do, before you install the packages `npm init`*
 
-*DO NOT re-download the libraries that are in the *"node_modules"* folder*
+*DO NOT re-download the libraries that are in the* "node_modules" *folder*
 
 
 
