@@ -1,10 +1,10 @@
  {
 	 
-  "TOKEN": "your_bot_token" /*Your bot token*/
-  "default_prefix": "", //Your bot prefix
-  "owners": "owner_id", //You user id
+  "TOKEN": "your_bot_token" 
+  "default_prefix": "", 
+  "owners": "owner_id", 
   "main_color" : "#dc5586",//The main embeds color
-  "error_color" : "#F04947",//The embed error color
+  "error_color" : "#F04947",//The embeds error color
   "success_color" : "#dc5586",
   "warning_color" : "#F9C541",
   "music_color" : "#5DADEC",
@@ -31,10 +31,6 @@
     "no"  : "#F04947",
   }
 
- "loggerChannelID": "your logs channel id",
-   "webhook": {
-      "id": "weebhook_id",
-      "token": "webhook_token"
-   }
+
 
 }
