@@ -1,4 +1,4 @@
- const {default_prefix, TOKEN } = require("./config.json")
+ const {default_prefix, TOKEN, mongo_url } = require("./config.json")
  const DisTube = require("distube")
  const { MessageEmbed } = require("discord.js");
 
