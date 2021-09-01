@@ -30,9 +30,9 @@ The bot is for discord.js v12.5.3! And bot version is older than now.
 
 # SUPPORT ME
 
-You can always Support me by inviting one of my **own Discord Bots** 
+You can always Support me by inviting Akimi
 
-Or donating on ko-fi
+Or donating on ko-fi :)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E861C4W)
 
