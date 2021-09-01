@@ -3,7 +3,7 @@
 	 
   "TOKEN": "your_bot_token" 
   "default_prefix": "",
-  "mongo_url": "your mongoDB url connection"
+  "mongo_url": "your mongoDB url connection",
 	 
 //COLORS	 
 	 
