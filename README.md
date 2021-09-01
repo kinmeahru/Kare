@@ -1,4 +1,13 @@
  Akimi
+ 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
 
 **This Discord Bot Repository of the Bot [Akimi](https://discord.com/oauth2/authorize?client_id=869537614796034128&scope=bot&permissions=8589934583) if you want to support me, then please [invite](https://discord.com/oauth2/authorize?client_id=869537614796034128&scope=bot&permissions=8589934583) him!**
 
