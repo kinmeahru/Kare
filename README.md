@@ -21,8 +21,6 @@ I will give Support if the BOT does not work for you!
 
 #### **NOTE:**
 
-*Do not look the files or folders name them are CASUALLY changed.*
-
 *If you are having errors/problems with starting delete the package.json file and do, before you install the packages `npm init`*
 
 
