@@ -1,27 +1,27 @@
  {
-//ENV	 
+
 	 
   "TOKEN": "your_bot_token" 
   "default_prefix": "",
   "mongo_url": "your mongoDB url connection",
-	 
-//COLORS	 
-	 
   "owners": "owner_id", 
-  "main_color" : "#dc5586",//The main embeds color
-  "error_color" : "#F04947",//The embeds error color
+	 
+
+	 
+  "main_color" : "#dc5586",
+  "error_color" : "#F04947",
   "success_color" : "#dc5586",
   "warning_color" : "#F9C541",
   "music_color" : "#5DADEC",
 	
-//COLORS 2
+
 	 
 "colors": {
     "yes" : "#dc5586",
     "no"  : "#F04947",
   },
 
-//EMOJIS
+
 
   "warning" : "<:warning:862627048123269120> ",
   "success" : "<:Success:869580276102234133> ",
