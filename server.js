@@ -1,15 +1,12 @@
  const {default_prefix, TOKEN, mongo_url } = require("./config.json")
-
  const { MessageEmbed } = require("discord.js");
-
-const mongoose = require('mongoose');
+ const mongoose = require('mongoose');
 
 mongoose.connect('mongo_url', {
     useUnifiedTopology : true,
     useNewUrlParser: true,
 }).then(console.log('connected to mongo db!'))
 
-const colors = require("colors")
 const Discord = require('discord.js');
 const { config } = require("dotenv");
 const fetch = require("node-fetch");
@@ -17,7 +14,6 @@ const db =require("quick.db");
 const moment = require("moment");
 const { CanvasSenpai } = require("canvas-senpai")
 const canva = new CanvasSenpai();
-const { emotes , emoji} =require("./config.json")
 const discord = require("discord.js");
 const disbut = require('discord-buttons');
 
