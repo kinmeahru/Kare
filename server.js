@@ -28,7 +28,7 @@ const yts = require('yt-search')
  
 client.queue = new Map();
 client.vote = new Map();
-const { ready } = require("./handlers/ready.js")
+
 
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
