@@ -2,9 +2,9 @@
 
 	 
   "TOKEN": "your_bot_token",
-  "default_prefix": "",
+  "default_prefix": "your bot prefix",
   "mongo_url": "your mongoDB url connection",
-  "owners": "owner_id", 
+  "owners": "your user id", 
 	 
 
 	 
