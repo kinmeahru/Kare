@@ -26,6 +26,7 @@ The bot is for discord.js v12.5.3! And bot version is older than now.
 
 *DO NOT re-download the libraries that are in the* "node_modules" *folder*
 
+*Music commands are not included*
 
 
 
