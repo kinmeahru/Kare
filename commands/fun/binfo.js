@@ -58,7 +58,7 @@ module.exports = {
           .addField("💻 Platform", `\`\`Windows\`\``, true)
           .addField("API Latency", `\`${(client.ws.ping)}ms\``, true)
         
-          .setFooter("Coded by: Rytsaa#9473\nCredits: Gipha#1312 (Assistant translator into German) ",config.AVATARURL)
+          .setFooter("Coded by: kayedaa#9473\nCredits: Gipha#1312 (Assistant translator into German)",config.AVATARURL)
       message.channel.send(botinfo)
   });
   }
