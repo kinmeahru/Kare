@@ -3,6 +3,8 @@ const { MessageEmbed } = require('discord.js')
 const ms = require("parse-ms");
 const Jwork = require('../../JSON/works.json');
 const JworkR = Jwork[Math.floor(Math.random() * Jwork.length)];
+const ITwork = require('../../JSON/ITworks.json');
+const ITworkR = ITwork[Math.floor(Math.random() * ITwork.length)];
 const { main_color, success_color, error_color, warning_color, success, warning, error } = require('../../config.json');
 
 module.exports = {
@@ -64,7 +66,7 @@ if(lang === 'en') {
             let amount = Math.floor(Math.random() * 80) + 1;
             let embed1 = new MessageEmbed()
                 .setColor(success_color)
-                .setDescription(`${success} ${JworkR} ${amount} coins`)
+                .setDescription(`${success} ${ITworkR} ${amount} coins`)
             message.channel.send(embed1)
 
             db.add(`works_${user.id}`, 1)
