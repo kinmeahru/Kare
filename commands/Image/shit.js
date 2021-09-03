@@ -4,6 +4,7 @@ const Discord = require(`discord.js`);
 const config = require("../../config.json")
 const canvacord = require("canvacord");
 const path = require("path");
+const db = require('quick.db')
 module.exports = {
 
     name: path.parse(__filename).name,
