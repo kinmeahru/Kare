@@ -5,6 +5,7 @@
   "default_prefix": "your bot prefix",
   "mongo_url": "your mongoDB url connection",
   "owners": "your user id", 
+  "bot_name": "Reakira",
   "dagpi-token": "your dagpi token(you can find it here https://dagpi.xyz/dashboard)",
 	 
 
