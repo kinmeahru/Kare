@@ -10,6 +10,24 @@ module.exports = {
   usage : '<prefix>set-language',
   run : async(bot, message, args) =>{
 
+	  
+/*
+basics construction
+
+ var lang = await db.get(`language_${message.guild.id}`)
+if (!lang) lang = 'en'
+
+if (lang === 'en') {
+ code here
+}
+
+if (lang === 'it') {
+  code here
+}
+
+ */
+	  
+	  
 var lang = db.get(`language_${message.guild.id}`)
        if(!lang) lang = 'en'
 
@@ -77,23 +95,8 @@ if (gg.toLowerCase() === `owo` || gg.toLowerCase() === `owo`) {
   }})
 } 
 
-
-
-
-/*this is the basic
-* var lang = await db.get(`language_${message.guild.id}`)
-if (!lang) lang = 'en' // add this to all commands in the first 
-
-if (lang === 'en') {
-  do the code here
 }
-
-if (lang === 'it') {
-  do the code here
-}
-
- */
-}
+	  
 if(lang === 'it') {
   if(!message.member.hasPermission('MANAGE_GUILD')){
   return message.channel.send({embed : {
@@ -294,19 +297,7 @@ if (gg.toLowerCase() === `owo` || gg.toLowerCase() === `owo`) {
 
 
 
-/*this is the basic
-* var lang = await db.get(`language_${message.guild.id}`)
-if (!lang) lang = 'en' // add this to all commands in the first 
 
-if (lang === 'en') {
-  do the code here
-}
-
-if (lang === 'it') {
-  do the code here
-}
-
- */
 }
 
   }
