@@ -4,7 +4,6 @@ const { Pokemon } = require('djs-games')
 module.exports = {
   name: 'gpokemon',
   category: "games",
-  aliases: ["rockpaperscissors"],
 
   run: async(client , message , args) => {
 
