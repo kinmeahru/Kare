@@ -1,4 +1,4 @@
- Reakira
+ Akis
  
 
 **This Discord Bot Repository of the Bot [Akis](https://discord.com/api/oauth2/authorize?client_id=869537614796034128&permissions=141733920758&scope=bot%20applications.commands) if you want to support me, then please [invite](https://discord.com/api/oauth2/authorize?client_id=869537614796034128&permissions=141733920758&scope=bot%20applications.commands) it!**
