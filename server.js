@@ -345,9 +345,15 @@ client.on('message', async (message) => {
 
 })
 
+//top.gg server and shards count
+const { AutoPoster } = require('topgg-autoposter')
+
+const poster = AutoPoster('Topgg Token', client) 
 
 
-
+poster.on('posted', (stats) => { 
+  console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`)
+})
 
 
 //bot login
