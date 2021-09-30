@@ -1,7 +1,7 @@
- Akis
+ Kare
  
 
-**This Discord Bot Repository of the Bot [Airis](https://discord.com/api/oauth2/authorize?client_id=869537614796034128&permissions=141733920758&scope=bot%20applications.commands) if you want to support me, then please [invite](https://discord.com/api/oauth2/authorize?client_id=869537614796034128&permissions=141733920758&scope=bot%20applications.commands) it!**
+**This Discord Bot Repository of the Bot [Kare](https://discord.com/api/oauth2/authorize?client_id=869537614796034128&permissions=141733920758&scope=bot%20applications.commands) if you want to support me, then please [invite](https://discord.com/api/oauth2/authorize?client_id=869537614796034128&permissions=141733920758&scope=bot%20applications.commands) it!**
 
 The bot is for discord.js v12.5.3! And bot version is older than now.
 
@@ -32,7 +32,7 @@ The bot is for discord.js v12.5.3! And bot version is older than now.
 
 # SUPPORT ME
 
-You can always Support me by inviting [Airis](https://discord.com/api/oauth2/authorize?client_id=869537614796034128&permissions=141733920758&scope=bot%20applications.commands)
+You can always Support me by inviting [Kare](https://discord.com/api/oauth2/authorize?client_id=869537614796034128&permissions=141733920758&scope=bot%20applications.commands)
 
 Or donating on ko-fi :)
 
