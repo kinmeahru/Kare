@@ -24,10 +24,7 @@ const client = new Discord.Client({
     require('discord-reply')
     client.setMaxListeners(200);
 
-const yts = require('yt-search')
- 
-client.queue = new Map();
-client.vote = new Map();
+
 
 
 client.commands = new discord.Collection();
@@ -116,23 +113,8 @@ client.on("ready", () => {
       
       });
 });
-//Old music player
-const { Player } = require("discord-music-player");
 
-const player = new Player(client, {
-    leaveOnEmpty: false,
-});
 
-client.player = player;
-
-new Player(client, {
-    leaveOnEnd: true,
-    leaveOnStop: true,
-    leaveOnEmpty: true,
-    timeout: 10,
-    volume: 150,
-    quality: 'high',
-});
 const fs = require('fs')
 
 //If the bot join in a guild
